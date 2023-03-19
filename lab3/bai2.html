@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        var chuoi="";
+        function nhapso(value) {
+            if (value!="=") {
+                chuoi=chuoi+value;
+            }else{
+                alert(""+eval(chuoi));
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <tr>
+    <td><input type="button" value="7" onclick="nhapso('7')"></td>
+    <td><input type="button" value="8" onclick="nhapso('8')"></td>
+    <td><input type="button" value="9" onclick="nhapso('9')"></td>
+    <td><input type="button" value="+" onclick="nhapso('+')"></td>
+</tr>
+<br>
+<tr>
+    <td><input type="button" value="4" onclick="nhapso('4')"></td>
+    <td><input type="button" value="5" onclick="nhapso('5')"></td>
+    <td><input type="button" value="6" onclick="nhapso('6')"></td>
+    <td><input type="button" value="-" onclick="nhapso('-')"></td>
+</tr>
+<br>
+<tr>
+    <td><input type="button" value="1" onclick="nhapso('1')"></td>
+    <td><input type="button" value="2" onclick="nhapso('2')"></td>
+    <td><input type="button" value="3" onclick="nhapso('3')"></td>
+    <td><input type="button" value="*" onclick="nhapso('*')"></td>
+</tr>
+<br>
+<tr>
+    <td><input type="button" value="0" onclick="nhapso('0')"></td>
+    <td><input type="button" value="c" onclick="nhapso('c')"></td>
+    <td><input type="button" value="=" onclick="nhapso('=')"></td>
+    <td><input type="button" value="/" onclick="nhapso('/')"></td>
+</tr>
+
+
+</body>
+</html>
