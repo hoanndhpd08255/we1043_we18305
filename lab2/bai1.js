@@ -16,7 +16,7 @@ let c = parseInt(c1);
     document.write("phuong trinh co nghiem kep:"+x);
  }
  else{ 
-    let x1= -(b - Math.sprt(delta)/(2*a));
+    let x1= -(b - Math.sqrt(delta)/(2*a));
     let x2= -(b+Math.sqrt(delta))/(2*a);
     document.write("phuong trinh co 2 nghiem phan biet:"+ x1 +x2);
  }
