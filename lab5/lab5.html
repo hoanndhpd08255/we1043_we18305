@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="lab5.css">
 </head>
 <body>
-    <div id="myDIV" class="header">
-        <h2>ToDo List</h2>
-        <label for="h2" style="display: block;">ten task</label>
-        <input type="text" id="myInput" placeholder="nhap..." style="display: block;">
-        <label for="" style="display: block;">Mô tả</label>
-        <input type="text" id="myInput" placeholder="nhap...">
-
-        <span onclick="newElement()" class="addBtn">Add</span>
+    <div class="wrapper">
+        <span class="title">TODO LIST</span>
+        <label for="">Task Name:</label>
+        <input type="text" name="task-name" id="task-name" placeholder="Enter task name">
+        <label for="" class="description">Description:</label>
+        <textarea name="task-description" id="task-description" cols="30" rows="10"
+            placeholder="Enter description of the task"></textarea>
+        <div class="buttonrow">
+            <button id="btnAdd" class="btn btn-disabled" disabled="true">Add</button>
+        </div>
+        <h5>Tasks List:</h5>
+        <section id="task-list">
+            <div class="row">
+                <div class="name">Name</div>
+                <div class="des">Description</div>
+                <div class="del">Del</div>
+                <div class="edit">Edit</div>
+            </div>
+        </section>
     </div>
+    <script src="./lab5.js"></script>
 </body>
 </html>
