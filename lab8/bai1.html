@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css.css">
+<body>
+    
+    <div class="nm">
+        <p class="ym"> Anh chẳng thể </p>
+    <video id="video" class="video"  src="./video/y2meta.com-Anh chẳng thể (Lofi Ver.) - Phạm Kỳ x Orinn-(480p).mp4"></video>
+    <div class="button">
+     <button onclick="play()">play</button>
+     <button onclick="pause()"> pause </button>
+     <button onclick="stop()"> stop </button>
+     <button onclick="tang()"> + </button>
+     <button onclick="giam()"> - </button>
+     <button onclick="replay()"> replay</button>
+    </div>
+</div>
+</body>
+<script>
+    let video = document.getElementById("video");
+     function play(){
+        video.play();
+     }
+     function pause(){ 
+            video.pause();
+        }
+    
+     function stop(){
+        video.pause();
+        if(video.currentTime){
+            video.currentTime = 0;
+        }
+
+     }
+     function replay(){
+        video.currentTime = 0;
+        video.play();
+
+     }
+     function tang(){
+        if (video.volume <= 1.0) {
+            video.volume = parseFloat(video.volume + 1.0).toFixed(1); 
+        }
+     }
+     function giam(){
+        if (video.volume >= 0.2) {
+            video.volume = parseFloat(video.volume - 0.2).toFixed(1);
+     }
+    }
+</script>
+</html>

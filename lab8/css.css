@@ -1,0 +1,28 @@
+.nm{
+    background-color:cornsilk;
+    float: left;
+   width: 70%;
+   height: 800px;
+    margin-left: 250px;
+}
+.ym{
+    text-align: center;
+    border:  1px solid rgb(0, 0, 0);;
+    width: 550px;
+    margin-left: 230px;
+    
+}
+.video{
+
+    display: block;
+    margin: 50px;
+    padding-left: 150px ;
+    height : 500px;
+     width: 60%;
+}
+.button{
+   
+   float: left;
+   margin: 0px;
+   padding-left: 370px;
+}
