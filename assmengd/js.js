@@ -23,3 +23,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+// The onmouseover Event
+document.getElementById('banghe').addEventListener('mouseover', mouseOver);
+document.getElementById('banghe').addEventListener('mouseout', mouseOut);
+
+function mouseOver() {
+document.getElementById('banghe').style.transform = 'scale(1.3)';
+document.getElementById('banghe').style.transition = 'linear .25s';
+}
+
+function mouseOut() {
+document.getElementById('banghe').style.transform = 'scale(1)'; 
+}
